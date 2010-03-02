@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  team: 1
+  player: 1
+
+two:
+  team: 1
+  player: 1

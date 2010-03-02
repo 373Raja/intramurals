@@ -1,0 +1,33 @@
+<p>
+  <b>Name:</b>
+  <%=h @sport.name %>
+</p>
+
+<p>
+  <b>Teamsize:</b>
+  <%=h @sport.teamsize %>
+</p>
+
+<p>
+  <b>Mmax:</b>
+  <%=h @sport.mmax %>
+</p>
+
+<p>
+  <b>Mmin:</b>
+  <%=h @sport.mmin %>
+</p>
+
+<p>
+  <b>Fmax:</b>
+  <%=h @sport.fmax %>
+</p>
+
+<p>
+  <b>Fmin:</b>
+  <%=h @sport.fmin %>
+</p>
+
+
+<%= link_to 'Edit', edit_sport_path(@sport) %> |
+<%= link_to 'Back', sports_path %>
