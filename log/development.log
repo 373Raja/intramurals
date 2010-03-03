@@ -3804,3 +3804,221 @@ Rendering teams/index
   [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
   [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
 Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing SportsController#show (for 127.0.0.1 at 2010-03-03 15:21:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSport Load (0.5ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 87ms (View: 25, DB: 0) | 200 OK [http://0.0.0.0/sports/1]
+
+
+Processing SportsController#index (for 127.0.0.1 at 2010-03-03 15:23:05) [GET]
+  [4;35;1mSport Load (0.7ms)[0m   [0mSELECT * FROM "sports" [0m
+Rendering template within layouts/application
+Rendering sports/index
+Completed in 26ms (View: 22, DB: 1) | 200 OK [http://0.0.0.0/sports]
+
+
+Processing SportsController#show (for 127.0.0.1 at 2010-03-03 15:23:07) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSport Load (0.2ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/sports/1]
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2010-03-03 15:23:12) [GET]
+  [4;35;1mTeam Load (0.7ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;36;1mSport Load (0.3ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;35;1mSport Load (0.3ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 97ms (View: 84, DB: 1) | 200 OK [http://0.0.0.0/teams]
+
+
+Processing TeamsController#show (for 127.0.0.1 at 2010-03-03 15:23:14) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mTeam Load (0.2ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering teams/show
+  [4;36;1mSport Load (0.3ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 19ms (View: 12, DB: 0) | 200 OK [http://0.0.0.0/teams/3]
+
+
+Processing SportsController#index (for 127.0.0.1 at 2010-03-03 15:23:16) [GET]
+  [4;35;1mSport Load (0.7ms)[0m   [0mSELECT * FROM "sports" [0m
+Rendering template within layouts/application
+Rendering sports/index
+Completed in 17ms (View: 13, DB: 1) | 200 OK [http://0.0.0.0/sports]
+
+
+Processing SportsController#show (for 127.0.0.1 at 2010-03-03 15:23:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSport Load (0.3ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/sports/1]
+
+
+Processing SportsController#show (for 127.0.0.1 at 2010-03-03 15:23:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSport Load (0.3ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/sports/1]
+
+
+Processing SportsController#show (for 127.0.0.1 at 2010-03-03 15:23:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSport Load (0.3ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/sports/1]
+
+
+Processing SportsController#show (for 127.0.0.1 at 2010-03-03 15:24:09) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSport Load (0.2ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/sports/1]
+
+
+Processing SportsController#show (for 127.0.0.1 at 2010-03-03 15:24:11) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSport Load (0.3ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/sports/1]
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2010-03-03 15:24:21) [GET]
+  [4;35;1mTeam Load (0.7ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;36;1mSport Load (0.3ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;35;1mSport Load (0.3ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 25ms (View: 18, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2010-03-03 15:24:22) [GET]
+  [4;35;1mTeam Load (0.7ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;36;1mSport Load (0.3ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;35;1mSport Load (0.3ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 83ms (View: 18, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2010-03-03 15:24:23) [GET]
+  [4;35;1mTeam Load (0.7ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;36;1mSport Load (0.3ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;35;1mSport Load (0.3ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 24ms (View: 18, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2010-03-03 15:24:24) [GET]
+  [4;35;1mTeam Load (0.6ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;36;1mSport Load (0.3ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;35;1mSport Load (0.4ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 26ms (View: 20, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2010-03-03 15:24:30) [GET]
+  [4;35;1mTeam Load (0.6ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;36;1mSport Load (0.3ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;35;1mSport Load (0.3ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 24ms (View: 18, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2010-03-03 15:24:50) [GET]
+  [4;35;1mTeam Load (0.7ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;36;1mSport Load (0.3ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;35;1mSport Load (0.3ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 92ms (View: 22, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2010-03-03 15:26:49) [GET]
+  [4;35;1mTeam Load (0.6ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;36;1mSport Load (0.3ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;35;1mSport Load (0.3ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 25ms (View: 18, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2010-03-03 15:27:20) [GET]
+  [4;35;1mTeam Load (0.9ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;36;1mSport Load (0.3ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;35;1mSport Load (0.3ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 27ms (View: 20, DB: 1) | 200 OK [http://0.0.0.0/]
+
+
+Processing SportsController#index (for 127.0.0.1 at 2010-03-03 15:27:30) [GET]
+  [4;35;1mSport Load (0.7ms)[0m   [0mSELECT * FROM "sports" [0m
+Rendering template within layouts/application
+Rendering sports/index
+Completed in 18ms (View: 13, DB: 1) | 200 OK [http://0.0.0.0/sports]
+
+
+Processing SportsController#show (for 127.0.0.1 at 2010-03-03 15:27:32) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSport Load (0.2ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/sports/1]
+
+
+Processing SportsController#show (for 127.0.0.1 at 2010-03-03 15:27:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSport Load (0.3ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/sports/1]
+
+
+Processing SportsController#show (for 127.0.0.1 at 2010-03-03 15:27:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSport Load (0.3ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 14ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/sports/1]
+
+
+Processing SportsController#show (for 127.0.0.1 at 2010-03-03 15:27:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSport Load (0.3ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/sports/1]
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2010-03-03 15:27:55) [GET]
+  [4;36;1mTeam Load (0.6ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;35;1mSport Load (0.3ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;36;1mSport Load (0.3ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 24ms (View: 18, DB: 1) | 200 OK [http://0.0.0.0/teams]

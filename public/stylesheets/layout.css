@@ -90,14 +90,13 @@ strong {
 	width: 17%;
 	top: 40px;
 	left: 3%;
-	height: 800px;
+
 }
 
 #content {
 	position: absolute;
 	left: 23%;
 	top: 20px;
-	height: 10000px;
 }
 
 #tabs {
