@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/intramurals/!svn/ver/3/test/unit
+END
+teamplayer_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/intramurals/!svn/ver/3/test/unit/teamplayer_test.rb
+END
+team_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/intramurals/!svn/ver/3/test/unit/team_test.rb
+END
+sport_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/intramurals/!svn/ver/3/test/unit/sport_test.rb
+END
+game_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/intramurals/!svn/ver/10/test/unit/game_test.rb
+END
+player_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/intramurals/!svn/ver/3/test/unit/player_test.rb
+END

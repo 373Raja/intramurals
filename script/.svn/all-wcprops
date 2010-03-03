@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/intramurals/!svn/ver/3/script
+END
+console
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/intramurals/!svn/ver/3/script/console
+END
+server
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/intramurals/!svn/ver/3/script/server
+END
+dbconsole
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/intramurals/!svn/ver/3/script/dbconsole
+END
+destroy
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/intramurals/!svn/ver/3/script/destroy
+END
+runner
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/intramurals/!svn/ver/3/script/runner
+END
+about
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/intramurals/!svn/ver/3/script/about
+END
+generate
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/intramurals/!svn/ver/3/script/generate
+END
+plugin
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/intramurals/!svn/ver/3/script/plugin
+END

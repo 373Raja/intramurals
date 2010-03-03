@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/intramurals/!svn/ver/3/db/migrate
+END
+20100228181002_quickfix.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/intramurals/!svn/ver/3/db/migrate/20100228181002_quickfix.rb
+END
+20100223185840_create_teams.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/intramurals/!svn/ver/3/db/migrate/20100223185840_create_teams.rb
+END
+20100228180003_jointable.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/intramurals/!svn/ver/3/db/migrate/20100228180003_jointable.rb
+END
+20100223185825_create_sports.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/intramurals/!svn/ver/3/db/migrate/20100223185825_create_sports.rb
+END
+20100228174738_create_teamplayers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/intramurals/!svn/ver/3/db/migrate/20100228174738_create_teamplayers.rb
+END
+20100302170135_create_games.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/intramurals/!svn/ver/10/db/migrate/20100302170135_create_games.rb
+END
+20100224203431_create_players.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/intramurals/!svn/ver/3/db/migrate/20100224203431_create_players.rb
+END

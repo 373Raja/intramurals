@@ -1,0 +1,23 @@
+<p>
+  <b>Team1:</b>
+  <%=h Team.find(@game.team1).name %>
+</p>
+
+<p>
+  <b>Team2:</b>
+  <%=h Team.find(@game.team2).name %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%=h @game.date.strftime("%m/%d/%Y") %>
+</p>
+
+<p>
+  <b>Score:</b>
+  <%=h @game.score %>
+</p>
+
+
+<%= link_to 'Edit', edit_game_path(@game) %> |
+<%= link_to 'Back', games_path %>

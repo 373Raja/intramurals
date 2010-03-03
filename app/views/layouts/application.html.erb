@@ -5,19 +5,50 @@
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <title>Teams: <%= controller.action_name %></title>
-  <%= stylesheet_link_tag 'scaffold' %>
+  <%= stylesheet_link_tag 'scaffold', 'layout' %>
 </head>
 <body>
 
 <p style="color: green"><%= flash[:notice] %></p>
-<div id="nav">
-	<%= link_to 'Home', root_path %> |
-	<%= link_to 'Sports', sports_path %> |
-	<%= link_to 'Teams', teams_path %> |	
-	<%= link_to 'Players', players_path %> |
-	<%= link_to 'Games', games_path %>
+
+<div id="topcontainer">
+	<div id="logo">
+		<%= link_to(image_tag("logo.png", :border => 0), root_path) %>
+	</div>
+	<div id="topnav">
+		<div id="navbg">
+			<div id="nav">
+				<%= link_to 'Schedule', root_path %> |
+				<%= link_to 'Sports', sports_path %> |
+				<%= link_to 'Teams', teams_path %> |	
+				<%= link_to 'Players', players_path %> |
+				<%= link_to 'Games', games_path %> |
+				<%= link_to 'Register', root_path %> |
+				<%= link_to 'Marketplace', root_path %>
+			</div>
+		</div>
+	</div>	
 </div>
-<%= yield %>
+<div id="container">
+	<div id="filters">
+		<p> we have filters here that would be implemented depending which page you on (through a partial?)</p>
+		
+	</div>
+	<div id="linepad">
+	<p> </p>
+	</div>
+	<div id="content">
+		<h1> page heading goes here</h1>
+		<div id="tabs">
+	tabs need to be positioned
+
+			<%= link_to(image_tag("tab.png", :border => 0), root_path) %>
+			<%= link_to(image_tag("tabs-inactive.png", :border => 0), root_path) %>
+			<%= link_to(image_tag("tabs-inactive.png", :border => 0), root_path) %>
+		</div>
+		<%= yield %>
+	</div>
+</div>
 
 </body>
 </html>

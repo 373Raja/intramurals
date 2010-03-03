@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  team1: 1
+  team2: 1
+  date: 2010-03-02 12:01:35
+  score: MyString
+
+two:
+  team1: 1
+  team2: 1
+  date: 2010-03-02 12:01:35
+  score: MyString

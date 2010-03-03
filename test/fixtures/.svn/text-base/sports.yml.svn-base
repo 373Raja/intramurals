@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  teamsize: 1
+  mmax: 1
+  mmin: 1
+  fmax: 1
+  fmin: 1
+
+two:
+  name: MyString
+  teamsize: 1
+  mmax: 1
+  mmin: 1
+  fmax: 1
+  fmin: 1

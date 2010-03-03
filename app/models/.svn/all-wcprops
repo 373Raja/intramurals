@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/intramurals/!svn/ver/3/app/models
+END
+teamplayer.rb
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/intramurals/!svn/ver/3/app/models/teamplayer.rb
+END
+team.rb
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/intramurals/!svn/ver/8/app/models/team.rb
+END
+sport.rb
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/intramurals/!svn/ver/3/app/models/sport.rb
+END
+game.rb
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/intramurals/!svn/ver/10/app/models/game.rb
+END
+player.rb
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/intramurals/!svn/ver/3/app/models/player.rb
+END

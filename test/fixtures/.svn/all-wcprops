@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/intramurals/!svn/ver/3/test/fixtures
+END
+players.yml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/intramurals/!svn/ver/3/test/fixtures/players.yml
+END
+teamplayers.yml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/intramurals/!svn/ver/3/test/fixtures/teamplayers.yml
+END
+teams.yml
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/intramurals/!svn/ver/3/test/fixtures/teams.yml
+END
+sports.yml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/intramurals/!svn/ver/3/test/fixtures/sports.yml
+END
+games.yml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/intramurals/!svn/ver/10/test/fixtures/games.yml
+END

@@ -1,33 +1,44 @@
-<p>
-  <b>Name:</b>
-  <%=h @sport.name %>
-</p>
+<p> here will be our team listing for <%=h @sport.name %>.  
+<div id="listings">
+<p> images need to be resized</p>
+<table cellpadding="5">
 
-<p>
-  <b>Teamsize:</b>
-  <%=h @sport.teamsize %>
-</p>
-
-<p>
-  <b>Mmax:</b>
-  <%=h @sport.mmax %>
-</p>
-
-<p>
-  <b>Mmin:</b>
-  <%=h @sport.mmin %>
-</p>
-
-<p>
-  <b>Fmax:</b>
-  <%=h @sport.fmax %>
-</p>
-
-<p>
-  <b>Fmin:</b>
-  <%=h @sport.fmin %>
-</p>
-
+	<tr id="tableHor">
+		<td>
+			Place
+		</td>
+		<td id="tableVer">
+			Teams
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img src="../images/gold.jpg">
+		</td>
+		<td id="tableVer">
+			<p> 1st place team here </p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img src="../images/silver.jpg">
+		</td>
+		<td id="tableVer">
+			<p> 2nd place team here </p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img src="../images/bronze.jpg">
+		</td>
+		<td id="tableVer">
+			<p> 3rd place team here </p>
+		</td>
+	</tr>
+			
+	
+</table>
+</div>
 
 <%= link_to 'Edit', edit_sport_path(@sport) %> |
 <%= link_to 'Back', sports_path %>

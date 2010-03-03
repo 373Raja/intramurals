@@ -517,3 +517,3290 @@ Rendering teams/index
   [4;36;1mSport Load (0.4ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
   [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
 Completed in 107ms (View: 38, DB: 1) | 200 OK [http://127.0.0.1/teams]
+
+
+Processing TeamsController#index (for 128.237.241.9 at 2010-03-02 14:37:55) [GET]
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 140ms (View: 78, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing PlayersController#index (for 128.237.241.9 at 2010-03-02 14:37:57) [GET]
+  [4;36;1mPlayer Load (0.0ms)[0m   [0;1mSELECT * FROM "players" [0m
+Rendering template within layouts/application
+Rendering players/index
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/players]
+
+
+Processing GamesController#index (for 128.237.241.9 at 2010-03-02 14:37:57) [GET]
+  [4;35;1mGame Load (0.0ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 250ms (View: 234, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing SportsController#index (for 128.237.241.9 at 2010-03-02 14:37:58) [GET]
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" [0m
+Rendering template within layouts/application
+Rendering sports/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports]
+
+
+Processing TeamsController#index (for 128.237.252.234 at 2010-03-02 14:54:17) [GET]
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 2106ms (View: 2106, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing PlayersController#index (for 128.237.252.234 at 2010-03-02 14:58:43) [GET]
+  [4;35;1mPlayer Load (0.0ms)[0m   [0mSELECT * FROM "players" [0m
+Rendering template within layouts/application
+Rendering players/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/players]
+
+
+Processing PlayersController#new (for 128.237.252.234 at 2010-03-02 14:58:55) [GET]
+Rendering template within layouts/application
+Rendering players/new
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/players/new]
+
+
+Processing PlayersController#create (for 128.237.252.234 at 2010-03-02 14:59:06) [POST]
+  Parameters: {"authenticity_token"=>"tVzO0TS0VfHQCxR2So01ZKUe8Km80NQ8JhTG336cEd8=", "player"=>{"name"=>"jay leno", "gender"=>"female", "team_id"=>"4"}, "commit"=>"Create"}
+  [4;35;1mPlayer Create (0.0ms)[0m   [0mINSERT INTO "players" ("name", "gender", "created_at", "updated_at", "team_id") VALUES('jay leno', 'female', '2010-03-02 19:59:06', '2010-03-02 19:59:06', 4)[0m
+Redirected to http://team05web.res.cmu.edu/players/3
+Completed in 16ms (DB: 0) | 302 Found [http://team05web.res.cmu.edu/players]
+
+
+Processing PlayersController#show (for 128.237.252.234 at 2010-03-02 14:59:07) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mPlayer Load (0.0ms)[0m   [0;1mSELECT * FROM "players" WHERE ("players"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering players/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/players/3]
+
+
+Processing PlayersController#index (for 128.237.252.234 at 2010-03-02 14:59:09) [GET]
+  [4;35;1mPlayer Load (0.0ms)[0m   [0mSELECT * FROM "players" [0m
+Rendering template within layouts/application
+Rendering players/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/players]
+
+
+Processing SportsController#index (for 173.75.14.48 at 2010-03-02 15:06:39) [GET]
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" [0m
+Rendering template within layouts/application
+Rendering sports/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports]
+
+
+Processing TeamsController#index (for 128.2.246.25 at 2010-03-02 20:18:11) [GET]
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing TeamsController#index (for 128.2.246.25 at 2010-03-02 20:18:13) [GET]
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing SportsController#index (for 128.2.246.25 at 2010-03-02 20:18:16) [GET]
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" [0m
+Rendering template within layouts/application
+Rendering sports/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports]
+
+
+Processing TeamsController#index (for 128.2.246.25 at 2010-03-02 20:18:17) [GET]
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://team05web.res.cmu.edu/teams]
+
+
+Processing PlayersController#index (for 128.2.246.25 at 2010-03-02 20:18:18) [GET]
+  [4;35;1mPlayer Load (0.0ms)[0m   [0mSELECT * FROM "players" [0m
+Rendering template within layouts/application
+Rendering players/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/players]
+
+
+Processing GamesController#index (for 128.2.246.25 at 2010-03-02 20:18:20) [GET]
+  [4;35;1mGame Load (0.0ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing TeamsController#index (for 67.165.107.111 at 2010-03-03 04:07:14) [GET]
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+
+ActionView::TemplateError (undefined method `logged_in?' for #<ActionView::Base:0x4245fe0>) on line #26 of app/views/layouts/application.html.erb:
+23: 				<tr>
+24: 					<td id="sign_in_left"></td>
+25: 					<td id="sign_in_middle">
+26: 						<% if logged_in? -%>
+27: 						Logged in as <%= link_to_current_user :content_method => :login %> | 
+28: 						<%= link_to "Log out", logout_path, { :title => "Log out" } %>
+29: 					    <% else -%>
+
+    app/views/layouts/application.html.erb:26
+    app/controllers/teams_controller.rb:8:in `index'
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TeamsController#index (for 67.165.107.111 at 2010-03-03 04:07:23) [GET]
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing SportsController#index (for 67.165.107.111 at 2010-03-03 04:07:25) [GET]
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" [0m
+Rendering template within layouts/application
+Rendering sports/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports]
+
+
+Processing TeamsController#index (for 67.165.107.111 at 2010-03-03 04:07:26) [GET]
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/teams]
+
+
+Processing PlayersController#index (for 67.165.107.111 at 2010-03-03 04:07:26) [GET]
+  [4;35;1mPlayer Load (0.0ms)[0m   [0mSELECT * FROM "players" [0m
+Rendering template within layouts/application
+Rendering players/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://team05web.res.cmu.edu/players]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:07:27) [GET]
+  [4;35;1mGame Load (0.0ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:14:24) [GET]
+  [4;36;1mGame Load (0.0ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:14:40) [GET]
+  [4;35;1mGame Load (0.0ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:15:34) [GET]
+  [4;36;1mGame Load (0.0ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:16:56) [GET]
+  [4;35;1mGame Load (0.0ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:17:00) [GET]
+  [4;36;1mGame Load (0.0ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:18:01) [GET]
+  [4;35;1mGame Load (0.0ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:18:04) [GET]
+  [4;36;1mGame Load (0.0ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:18:52) [GET]
+  [4;35;1mGame Load (0.0ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:18:54) [GET]
+  [4;36;1mGame Load (0.0ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:19:16) [GET]
+  [4;35;1mGame Load (0.0ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:19:23) [GET]
+  [4;36;1mGame Load (0.0ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:19:39) [GET]
+  [4;35;1mGame Load (0.0ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:20:26) [GET]
+  [4;36;1mGame Load (0.0ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:21:45) [GET]
+  [4;35;1mGame Load (0.0ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:22:03) [GET]
+  [4;36;1mGame Load (0.0ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:22:18) [GET]
+  [4;35;1mGame Load (0.0ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:22:38) [GET]
+  [4;36;1mGame Load (0.0ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:22:44) [GET]
+  [4;35;1mGame Load (0.0ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:23:00) [GET]
+  [4;36;1mGame Load (0.0ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:23:08) [GET]
+  [4;35;1mGame Load (0.0ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (15.6ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 0, DB: 16) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:23:22) [GET]
+  [4;36;1mGame Load (0.0ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:23:27) [GET]
+  [4;35;1mGame Load (0.0ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (15.6ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 0, DB: 16) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:23:44) [GET]
+  [4;36;1mGame Load (0.0ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:23:57) [GET]
+  [4;35;1mGame Load (0.0ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:25:00) [GET]
+  [4;36;1mGame Load (0.0ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:25:02) [GET]
+  [4;35;1mGame Load (0.0ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:25:22) [GET]
+  [4;36;1mGame Load (0.0ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:25:43) [GET]
+  [4;35;1mGame Load (0.0ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:25:46) [GET]
+  [4;36;1mGame Load (0.0ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:25:50) [GET]
+  [4;35;1mGame Load (0.0ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:26:05) [GET]
+  [4;36;1mGame Load (0.0ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (15.6ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 0, DB: 16) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:26:17) [GET]
+  [4;35;1mGame Load (0.0ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:26:45) [GET]
+  [4;36;1mGame Load (0.0ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:26:51) [GET]
+  [4;35;1mGame Load (0.0ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:27:05) [GET]
+  [4;36;1mGame Load (0.0ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:28:11) [GET]
+  [4;35;1mGame Load (0.0ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:28:46) [GET]
+  [4;36;1mGame Load (0.0ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:29:20) [GET]
+  [4;35;1mGame Load (0.0ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:31:19) [GET]
+  [4;36;1mGame Load (0.0ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:31:39) [GET]
+  [4;35;1mGame Load (0.0ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:33:10) [GET]
+  [4;36;1mGame Load (0.0ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:34:24) [GET]
+  [4;35;1mGame Load (0.0ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:34:32) [GET]
+  [4;36;1mGame Load (0.0ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:34:35) [GET]
+  [4;35;1mGame Load (0.0ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:35:34) [GET]
+  [4;36;1mGame Load (0.0ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (15.6ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 0, DB: 16) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:36:34) [GET]
+  [4;35;1mGame Load (0.0ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:36:59) [GET]
+  [4;36;1mGame Load (0.0ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:37:32) [GET]
+  [4;35;1mGame Load (0.0ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:38:26) [GET]
+  [4;36;1mGame Load (0.0ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing ApplicationController#index (for 67.165.107.111 at 2010-03-03 04:38:26) [GET]
+
+ActionController::RoutingError (No route matches "/images/transparentgrey.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:39:44) [GET]
+  [4;35;1mGame Load (0.0ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing ApplicationController#index (for 67.165.107.111 at 2010-03-03 04:39:45) [GET]
+
+ActionController::RoutingError (No route matches "/images/transparentgrey.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:40:20) [GET]
+  [4;36;1mGame Load (0.0ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing ApplicationController#index (for 67.165.107.111 at 2010-03-03 04:40:20) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/datagrid.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.165.107.111 at 2010-03-03 04:40:21) [GET]
+
+ActionController::RoutingError (No route matches "/images/transparentgrey.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.165.107.111 at 2010-03-03 04:40:21) [GET]
+
+ActionController::RoutingError (No route matches "/images/sign_in/sign_in_left.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 67.165.107.111 at 2010-03-03 04:40:21) [GET]
+
+ActionController::RoutingError (No route matches "/images/sign_in/sign_in_right.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:41:49) [GET]
+  [4;35;1mGame Load (0.0ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing ApplicationController#index (for 67.165.107.111 at 2010-03-03 04:41:49) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/datagrid.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:42:13) [GET]
+  [4;36;1mGame Load (0.0ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing ApplicationController#index (for 67.165.107.111 at 2010-03-03 04:42:13) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/datagrid.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:42:16) [GET]
+  [4;35;1mGame Load (0.0ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing ApplicationController#index (for 67.165.107.111 at 2010-03-03 04:42:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/datagrid.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:42:46) [GET]
+  [4;36;1mGame Load (0.0ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing ApplicationController#index (for 67.165.107.111 at 2010-03-03 04:42:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/datagrid.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:42:48) [GET]
+  [4;35;1mGame Load (0.0ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (15.6ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 0, DB: 16) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing ApplicationController#index (for 67.165.107.111 at 2010-03-03 04:42:48) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/datagrid.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:43:09) [GET]
+  [4;36;1mGame Load (0.0ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing ApplicationController#index (for 67.165.107.111 at 2010-03-03 04:43:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/datagrid.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:43:41) [GET]
+  [4;35;1mGame Load (0.0ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing ApplicationController#index (for 67.165.107.111 at 2010-03-03 04:43:41) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/datagrid.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SportsController#index (for 67.165.107.111 at 2010-03-03 04:43:45) [GET]
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" [0m
+Rendering template within layouts/application
+Rendering sports/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports]
+
+
+Processing ApplicationController#index (for 67.165.107.111 at 2010-03-03 04:43:45) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/datagrid.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing TeamsController#index (for 67.165.107.111 at 2010-03-03 04:43:47) [GET]
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/teams]
+
+
+Processing ApplicationController#index (for 67.165.107.111 at 2010-03-03 04:43:47) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/datagrid.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing TeamsController#index (for 67.165.107.111 at 2010-03-03 04:43:52) [GET]
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/teams]
+
+
+Processing ApplicationController#index (for 67.165.107.111 at 2010-03-03 04:43:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/datagrid.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing TeamsController#index (for 67.165.107.111 at 2010-03-03 04:44:15) [GET]
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/teams]
+
+
+Processing ApplicationController#index (for 67.165.107.111 at 2010-03-03 04:44:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/datagrid.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:44:17) [GET]
+  [4;35;1mGame Load (15.6ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 16, DB: 16) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing ApplicationController#index (for 67.165.107.111 at 2010-03-03 04:44:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/datagrid.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing TeamsController#index (for 67.165.107.111 at 2010-03-03 04:44:54) [GET]
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/teams]
+
+
+Processing ApplicationController#index (for 67.165.107.111 at 2010-03-03 04:44:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/datagrid.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing TeamsController#index (for 67.165.107.111 at 2010-03-03 04:45:04) [GET]
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/teams]
+
+
+Processing ApplicationController#index (for 67.165.107.111 at 2010-03-03 04:45:04) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/datagrid.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing TeamsController#index (for 67.165.107.111 at 2010-03-03 04:45:06) [GET]
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/teams]
+
+
+Processing ApplicationController#index (for 67.165.107.111 at 2010-03-03 04:45:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/datagrid.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing TeamsController#index (for 67.165.107.111 at 2010-03-03 04:45:11) [GET]
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/teams]
+
+
+Processing ApplicationController#index (for 67.165.107.111 at 2010-03-03 04:45:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/datagrid.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing TeamsController#index (for 67.165.107.111 at 2010-03-03 04:45:17) [GET]
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing ApplicationController#index (for 67.165.107.111 at 2010-03-03 04:45:17) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/datagrid.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:45:25) [GET]
+  [4;36;1mGame Load (0.0ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing ApplicationController#index (for 67.165.107.111 at 2010-03-03 04:45:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/datagrid.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing TeamsController#index (for 67.165.107.111 at 2010-03-03 04:45:41) [GET]
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing ApplicationController#index (for 67.165.107.111 at 2010-03-03 04:45:41) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/datagrid.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing TeamsController#index (for 67.165.107.111 at 2010-03-03 04:45:43) [GET]
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing ApplicationController#index (for 67.165.107.111 at 2010-03-03 04:45:43) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/datagrid.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:46:15) [GET]
+  [4;35;1mGame Load (0.0ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing ApplicationController#index (for 67.165.107.111 at 2010-03-03 04:46:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/datagrid.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:46:25) [GET]
+  [4;36;1mGame Load (0.0ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing ApplicationController#index (for 67.165.107.111 at 2010-03-03 04:46:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/datagrid.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing TeamsController#index (for 67.165.107.111 at 2010-03-03 04:47:00) [GET]
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/teams]
+
+
+Processing ApplicationController#index (for 67.165.107.111 at 2010-03-03 04:47:01) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/datagrid.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:47:01) [GET]
+  [4;35;1mGame Load (0.0ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing ApplicationController#index (for 67.165.107.111 at 2010-03-03 04:47:01) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/datagrid.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:47:16) [GET]
+  [4;36;1mGame Load (0.0ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:47:59) [GET]
+  [4;35;1mGame Load (0.0ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:48:11) [GET]
+  [4;36;1mGame Load (0.0ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:48:33) [GET]
+  [4;35;1mGame Load (0.0ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:48:36) [GET]
+  [4;36;1mGame Load (0.0ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:48:38) [GET]
+  [4;35;1mGame Load (0.0ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing TeamsController#index (for 67.165.107.111 at 2010-03-03 04:48:39) [GET]
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 04:48:53) [GET]
+  [4;36;1mGame Load (0.0ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing SportsController#index (for 67.165.107.111 at 2010-03-03 04:49:32) [GET]
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" [0m
+Rendering template within layouts/application
+Rendering sports/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports]
+
+
+Processing SportsController#index (for 67.165.107.111 at 2010-03-03 04:49:54) [GET]
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" [0m
+Rendering template within layouts/application
+Rendering sports/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports]
+
+
+Processing SportsController#new (for 67.165.107.111 at 2010-03-03 04:50:11) [GET]
+Rendering template within layouts/application
+Rendering sports/new
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/new]
+
+
+Processing SportsController#create (for 67.165.107.111 at 2010-03-03 04:50:29) [POST]
+  Parameters: {"authenticity_token"=>"CYkG2frTqruG6rL0htk7yD76DOK3Ytlxw1HmXi7920Y=", "sport"=>{"name"=>"volleyball", "teamsize"=>"16", "mmax"=>"8", "mmin"=>"2", "fmax"=>"8", "fmin"=>"2"}, "commit"=>"Create"}
+  [4;35;1mSport Create (0.0ms)[0m   [0mINSERT INTO "sports" ("name", "teamsize", "mmax", "mmin", "fmax", "fmin", "created_at", "updated_at") VALUES('volleyball', 16, 8, 2, 8, 2, '2010-03-03 09:50:29', '2010-03-03 09:50:29')[0m
+Redirected to http://team05web.res.cmu.edu/sports/3
+Completed in 16ms (DB: 0) | 302 Found [http://team05web.res.cmu.edu/sports]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 04:50:29) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 04:51:10) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 04:54:09) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 04:56:00) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 04:58:06) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 04:58:06) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:01:08) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#images to jpg (for 67.165.107.111 at 2010-03-03 05:01:08) [GET]
+  Parameters: {"id"=>"gold"}
+
+ActionController::UnknownAction (No action responded to images. Actions: create, destroy, edit, index, new, show, and update):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:01:39) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:02:07) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:03:32) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:04:03) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:04:05) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:04:54) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:06:29) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:06:31) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 05:06:34) [GET]
+  [4;35;1mGame Load (0.0ms)[0m   [0mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (15.6ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 31ms (View: 0, DB: 16) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing SportsController#index (for 67.165.107.111 at 2010-03-03 05:06:36) [GET]
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" [0m
+Rendering template within layouts/application
+Rendering sports/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports]
+
+
+Processing SportsController#index (for 67.165.107.111 at 2010-03-03 05:06:37) [GET]
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" [0m
+Rendering template within layouts/application
+Rendering sports/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:06:44) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:07:12) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:07:47) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:09:03) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:09:14) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:09:22) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:10:19) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:10:35) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:11:21) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:11:35) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:11:51) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:12:09) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:13:31) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:14:06) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:14:14) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:14:30) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:14:39) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:14:53) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:15:01) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:15:19) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:15:52) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:16:45) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:16:53) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:16:58) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:17:09) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:17:16) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:17:44) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:18:03) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:18:04) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:18:23) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:18:29) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:18:39) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:18:48) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:19:32) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:20:03) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:20:29) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:20:41) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:20:46) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:20:52) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:22:21) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:22:53) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:23:19) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:23:29) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:23:33) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:23:40) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:23:50) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:23:55) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:24:25) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:24:31) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:25:02) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:25:45) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:26:09) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:26:25) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:27:39) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:28:53) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:29:15) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:29:46) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:30:55) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:34:06) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:34:56) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:34:58) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:35:08) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:36:00) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:36:26) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:36:34) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:36:47) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:37:54) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:38:37) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:38:48) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:39:08) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:39:39) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:39:44) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:39:56) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:40:14) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:41:36) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing TeamsController#index (for 67.165.107.111 at 2010-03-03 05:41:45) [GET]
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing SportsController#index (for 67.165.107.111 at 2010-03-03 05:41:47) [GET]
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" [0m
+Rendering template within layouts/application
+Rendering sports/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports]
+
+
+Processing TeamsController#index (for 67.165.107.111 at 2010-03-03 05:41:50) [GET]
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/teams]
+
+
+Processing PlayersController#index (for 67.165.107.111 at 2010-03-03 05:41:52) [GET]
+  [4;36;1mPlayer Load (0.0ms)[0m   [0;1mSELECT * FROM "players" [0m
+Rendering template within layouts/application
+Rendering players/index
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/players]
+
+
+Processing GamesController#index (for 67.165.107.111 at 2010-03-03 05:41:53) [GET]
+  [4;36;1mGame Load (0.0ms)[0m   [0;1mSELECT * FROM "games" [0m
+Rendering template within layouts/application
+Rendering games/index
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/games]
+
+
+Processing TeamsController#index (for 67.165.107.111 at 2010-03-03 05:41:54) [GET]
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing TeamsController#index (for 67.165.107.111 at 2010-03-03 05:41:54) [GET]
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing TeamsController#index (for 67.165.107.111 at 2010-03-03 05:42:06) [GET]
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 05:42:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/1]
+
+
+Processing TeamsController#index (for 67.165.107.111 at 2010-03-03 05:42:23) [GET]
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing TeamsController#index (for 67.165.107.111 at 2010-03-03 05:42:28) [GET]
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing TeamsController#index (for 67.165.107.111 at 2010-03-03 05:42:57) [GET]
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing TeamsController#index (for 67.165.107.111 at 2010-03-03 05:43:22) [GET]
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing TeamsController#index (for 67.165.107.111 at 2010-03-03 05:43:24) [GET]
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing TeamsController#index (for 67.165.107.111 at 2010-03-03 05:43:25) [GET]
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing TeamsController#index (for 67.165.107.111 at 2010-03-03 05:43:26) [GET]
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing SportsController#index (for 67.165.107.111 at 2010-03-03 05:43:27) [GET]
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" [0m
+Rendering template within layouts/application
+Rendering sports/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports]
+
+
+Processing TeamsController#index (for 67.165.107.111 at 2010-03-03 05:43:28) [GET]
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing SportsController#index (for 67.165.107.111 at 2010-03-03 05:43:30) [GET]
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" [0m
+Rendering template within layouts/application
+Rendering sports/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports]
+
+
+Processing TeamsController#index (for 67.165.107.111 at 2010-03-03 05:43:31) [GET]
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/teams]
+
+
+Processing TeamsController#index (for 67.165.107.111 at 2010-03-03 05:43:32) [GET]
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing SportsController#show (for 67.165.107.111 at 2010-03-03 09:54:35) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing TeamsController#index (for 128.237.252.26 at 2010-03-03 12:20:44) [GET]
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 13681ms (View: 4586, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing TeamsController#index (for 128.237.252.26 at 2010-03-03 12:20:58) [GET]
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing TeamsController#index (for 128.237.252.26 at 2010-03-03 12:20:58) [GET]
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 12:21:25) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#index (for 128.237.252.26 at 2010-03-03 12:21:53) [GET]
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" [0m
+Rendering template within layouts/application
+Rendering sports/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports]
+
+
+Processing SportsController#index (for 128.237.252.26 at 2010-03-03 12:22:19) [GET]
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" [0m
+Rendering template within layouts/application
+Rendering sports/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 12:22:35) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 12:23:23) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 12:24:07) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 12:26:19) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 12:30:37) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 12:43:59) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 12:45:02) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 12:46:49) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 12:47:53) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing TeamsController#index (for 128.237.252.26 at 2010-03-03 12:48:21) [GET]
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing TeamsController#index (for 128.237.252.26 at 2010-03-03 12:49:19) [GET]
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 18190ms (View: 9095, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing TeamsController#index (for 128.237.252.26 at 2010-03-03 12:49:38) [GET]
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing TeamsController#index (for 128.237.252.26 at 2010-03-03 12:49:38) [GET]
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing TeamsController#index (for 128.237.252.26 at 2010-03-03 12:49:59) [GET]
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing SportsController#index (for 128.237.252.26 at 2010-03-03 12:50:32) [GET]
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" [0m
+Rendering template within layouts/application
+Rendering sports/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports]
+
+
+Processing SportsController#index (for 128.237.252.26 at 2010-03-03 12:59:29) [GET]
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" [0m
+Rendering template within layouts/application
+Rendering sports/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports]
+
+
+Processing SportsController#index (for 128.237.252.26 at 2010-03-03 13:17:27) [GET]
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" [0m
+Rendering template within layouts/application
+Rendering sports/index
+Completed in 4571ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports]
+
+
+Processing SportsController#index (for 128.237.252.26 at 2010-03-03 13:17:32) [GET]
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" [0m
+Rendering template within layouts/application
+Rendering sports/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports]
+
+
+Processing SportsController#index (for 128.237.252.26 at 2010-03-03 13:18:20) [GET]
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" [0m
+Rendering template within layouts/application
+Rendering sports/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports]
+
+
+Processing SportsController#index (for 128.237.252.26 at 2010-03-03 13:19:39) [GET]
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" [0m
+Rendering template within layouts/application
+Rendering sports/index
+Completed in 4571ms (View: 4555, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 13:19:43) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing TeamsController#index (for 128.237.252.26 at 2010-03-03 13:20:04) [GET]
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing TeamsController#index (for 128.237.252.26 at 2010-03-03 13:26:46) [GET]
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing SportsController#index (for 128.237.252.26 at 2010-03-03 13:27:05) [GET]
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" [0m
+Rendering template within layouts/application
+Rendering sports/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports]
+
+
+Processing SportsController#index (for 128.237.252.26 at 2010-03-03 13:27:38) [GET]
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" [0m
+Rendering template within layouts/application
+Rendering sports/index
+Completed in 4602ms (View: 31, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 13:27:43) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 13:28:10) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 13:30:37) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing TeamsController#index (for 128.237.241.235 at 2010-03-03 13:33:36) [GET]
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;36;1mSport Load (15.6ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 16ms (View: 0, DB: 16) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 13:34:07) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing TeamsController#index (for 128.237.241.235 at 2010-03-03 13:34:39) [GET]
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing TeamsController#index (for 128.237.241.235 at 2010-03-03 13:35:53) [GET]
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing TeamsController#index (for 128.237.241.235 at 2010-03-03 13:35:55) [GET]
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing TeamsController#index (for 128.237.241.235 at 2010-03-03 13:35:56) [GET]
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing ApplicationController#index (for 128.237.241.235 at 2010-03-03 13:35:58) [GET]
+
+ActionController::RoutingError (No route matches "/login" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing TeamsController#index (for 128.237.241.235 at 2010-03-03 13:35:59) [GET]
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing PlayersController#index (for 128.237.241.235 at 2010-03-03 13:36:02) [GET]
+  [4;36;1mPlayer Load (0.0ms)[0m   [0;1mSELECT * FROM "players" [0m
+Rendering template within layouts/application
+Rendering players/index
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/players]
+
+
+Processing TeamsController#index (for 128.237.241.235 at 2010-03-03 13:36:03) [GET]
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/teams]
+
+
+Processing SportsController#index (for 128.237.241.235 at 2010-03-03 13:36:04) [GET]
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" [0m
+Rendering template within layouts/application
+Rendering sports/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports]
+
+
+Processing TeamsController#index (for 128.237.241.235 at 2010-03-03 13:36:06) [GET]
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing TeamsController#index (for 128.237.241.235 at 2010-03-03 13:36:08) [GET]
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 13:37:11) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 13:38:20) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 13:39:33) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 13:41:26) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 13:45:50) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 94ms (View: 78, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing TeamsController#index (for 128.237.241.235 at 2010-03-03 13:45:50) [GET]
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 9157ms (View: 9095, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 13:48:51) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 62ms (View: 62, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 13:49:36) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 13:51:29) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 13:52:20) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 13:54:17) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 13:56:19) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 13:58:38) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 13:59:51) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 13:59:51) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 14:01:38) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 14:02:42) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 14:03:23) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 14:07:58) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 14:08:48) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 14:08:50) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 14:24:23) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 14:25:31) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 14:26:01) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 14:26:05) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 14:26:22) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 14:28:02) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 14:28:15) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 14:28:47) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 14:29:13) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 14:29:46) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 14:29:49) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 14:30:11) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 14:30:13) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 14:30:21) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 14:30:41) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 14:30:54) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 14:31:38) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 14:32:26) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing SportsController#show (for 128.237.252.26 at 2010-03-03 14:32:29) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 3) [0m
+Rendering template within layouts/application
+Rendering sports/show
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/sports/3]
+
+
+Processing TeamsController#index (for 128.237.252.26 at 2010-03-03 14:32:35) [GET]
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 94ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing TeamsController#index (for 128.237.241.235 at 2010-03-03 14:38:46) [GET]
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 5039ms (View: 5023, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing TeamsController#index (for 128.237.241.235 at 2010-03-03 14:38:57) [GET]
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing PlayersController#index (for 128.237.241.235 at 2010-03-03 14:38:58) [GET]
+  [4;36;1mPlayer Load (0.0ms)[0m   [0;1mSELECT * FROM "players" [0m
+Rendering template within layouts/application
+Rendering players/index
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://team05web.res.cmu.edu/players]
+
+
+Processing TeamsController#index (for 128.237.241.235 at 2010-03-03 14:38:59) [GET]
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing TeamsController#index (for 128.237.241.235 at 2010-03-03 14:39:01) [GET]
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/teams]
+
+
+Processing PlayersController#index (for 128.237.241.235 at 2010-03-03 14:39:03) [GET]
+  [4;36;1mPlayer Load (0.0ms)[0m   [0;1mSELECT * FROM "players" [0m
+Rendering template within layouts/application
+Rendering players/index
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 3) [0m
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 5) [0m
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 4) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/players]
+
+
+Processing PlayersController#new (for 128.237.241.235 at 2010-03-03 14:39:08) [GET]
+Rendering template within layouts/application
+Rendering players/new
+  [4;36;1mTeam Load (0.0ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/players/new]
+
+
+Processing TeamsController#index (for 128.237.241.235 at 2010-03-03 14:39:11) [GET]
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]
+
+
+Processing ApplicationController#index (for 70.124.95.170 at 2010-03-03 14:45:15) [GET]
+
+ActionController::RoutingError (No route matches "/w00tw00t.at.ISC.SANS.DFind:)" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing TeamsController#index (for 128.237.255.144 at 2010-03-03 15:02:04) [GET]
+  [4;35;1mTeam Load (0.0ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/application
+Rendering teams/index
+  [4;36;1mSport Load (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+  [4;35;1mSport Load (0.0ms)[0m   [0mSELECT * FROM "sports" WHERE ("sports"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "sports" WHERE ("sports"."id" = 1) [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://team05web.res.cmu.edu/]

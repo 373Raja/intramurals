@@ -1,0 +1,137 @@
+html {
+   height: 100%;
+   font-family: Arial, Helvetica, sans-serif;
+   color:#333;
+   background:#ddd;
+}
+
+body {
+   height: 100%;
+   margin: auto;
+}
+
+nav a {
+	font-size: 20px;
+	color: #ff7f00;
+	text-decoration: none;
+}
+
+a:hover {
+   text-decoration: underline;
+}
+
+strong {
+   font-weight: bold;
+}
+
+#paddingdiv {
+	height:15px;
+}
+
+#topcontainer {
+	position: relative;
+	top:0px;
+	width:100%;
+	height:75px;
+	border-bottom:1px #000 solid;
+}
+
+#logo {
+	position: absolute;
+	width:20%;
+	background-color:#c1282d;
+	height:100%;
+
+}
+
+#topnav{
+	position: absolute;
+	height: 100%;
+	left: 20%;
+	width: 80%;
+	background-color:#c1282d;
+}
+
+#navbg {
+	position: relative;
+	background-color:#cd5257;
+	top: 60%;
+	width: 80%;
+	height: 40%;
+}
+
+
+#nav{
+	position: absolute;
+	left: 5%;
+	top: 15%;
+	height: 100%
+	border-bottom:1px #000 solid;
+	font-size: 20px;
+}
+
+#container {
+	position: relative;
+	width:100%;
+	height:75px;
+}
+
+
+#topnav{
+	position: absolute;
+	height: 100%;
+	left: 20%;
+	width: 80%;
+	background-color:#c1282d;
+}
+
+#filters {
+	position: absolute;
+	width: 17%;
+	top: 40px;
+	left: 3%;
+	height: 800px;
+}
+
+#content {
+	position: absolute;
+	left: 23%;
+	top: 20px;
+	height: 10000px;
+}
+
+#tabs {
+	position: relative;
+	border-bottom:1px #000 solid;
+	width: 100%;
+}
+
+
+#tableHor {
+	border: solid 0 #cdcdcd; 
+	border-bottom-width:2px; 
+	padding-left:0.5ex;
+}
+
+#tableVer {
+	border: solid 0 #cdcdcd; 
+	border-left-width:2px; 
+	padding-left:0.5ex;
+}
+
+#linepad {
+	position: relative;
+	top: 15px;
+	left: 20%;
+	height: 500px;
+	width: 150px;
+	background-image:url("../images/line.png");
+	background-repeat:repeat-y;
+
+}
+
+
+#listings table tr {
+	border-bottom:1px #000 solid;
+}
+

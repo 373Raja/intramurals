@@ -1,0 +1,30 @@
+<h1>Listing sports</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Teamsize</th>
+    <th>Mmax</th>
+    <th>Mmin</th>
+    <th>Fmax</th>
+    <th>Fmin</th>
+  </tr>
+
+<% @sports.each do |sport| %>
+  <tr>
+    <td><%=h sport.name %></td>
+    <td><%=h sport.teamsize %></td>
+    <td><%=h sport.mmax %></td>
+    <td><%=h sport.mmin %></td>
+    <td><%=h sport.fmax %></td>
+    <td><%=h sport.fmin %></td>
+    <td><%= link_to 'Show', sport %></td>
+    <td><%= link_to 'Edit', edit_sport_path(sport) %></td>
+    <td><%= link_to 'Destroy', sport, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New sport', new_sport_path %>

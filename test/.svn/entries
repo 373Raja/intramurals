@@ -1,0 +1,77 @@
+10
+
+dir
+3
+http://smarin.dyndns.org/svn/intramurals/test
+http://smarin.dyndns.org/svn/intramurals
+
+
+
+2010-03-02T05:15:46.186842Z
+3
+team5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3f4e6012-8489-4556-abbf-9498beb20505
+
+unit
+dir
+
+test_helper.rb
+file
+
+
+
+
+2010-03-02T05:03:01.000000Z
+e297614c72684d065aef001f86188732
+2010-03-02T05:15:46.186842Z
+3
+team5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1800
+
+performance
+dir
+
+functional
+dir
+
+integration
+dir
+
+fixtures
+dir
+

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/intramurals/!svn/ver/3/app/controllers
+END
+sports_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/intramurals/!svn/ver/8/app/controllers/sports_controller.rb
+END
+games_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/intramurals/!svn/ver/10/app/controllers/games_controller.rb
+END
+players_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/intramurals/!svn/ver/8/app/controllers/players_controller.rb
+END
+application_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/intramurals/!svn/ver/3/app/controllers/application_controller.rb
+END
+teamplayers_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/intramurals/!svn/ver/3/app/controllers/teamplayers_controller.rb
+END
+teams_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/intramurals/!svn/ver/8/app/controllers/teams_controller.rb
+END

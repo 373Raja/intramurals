@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/intramurals/!svn/ver/3/app/views/players
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/intramurals/!svn/ver/3/app/views/players/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/intramurals/!svn/ver/3/app/views/players/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/intramurals/!svn/ver/3/app/views/players/new.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/intramurals/!svn/ver/3/app/views/players/show.html.erb
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/intramurals/!svn/ver/3/app/views/sports
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/intramurals/!svn/ver/3/app/views/sports/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/intramurals/!svn/ver/3/app/views/sports/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/intramurals/!svn/ver/3/app/views/sports/new.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/intramurals/!svn/ver/3/app/views/sports/show.html.erb
+END
